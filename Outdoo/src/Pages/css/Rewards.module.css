@@ -1,0 +1,287 @@
+/* Container styling */
+.container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header styling */
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0px 3px 4px -4px #000000;
+    align-items: center;
+    margin-bottom: 0;
+    background: rgba(12,203,62);
+    background: linear-gradient(90deg, rgba(12,203,62,0.8) 0%, rgba(10,228,222,0.8) 66%, rgba(12,182,187,0.8) 100%);
+}
+
+img{
+    width: auto;
+    height: auto;
+}
+
+.menu_logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 3.3em;
+}
+
+.menu_button{
+    border: none;
+    background: none;
+    margin-top: 1em;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 0.5em;
+    align-items: center;
+    padding-top: 0.5em;
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo img{
+    max-width: 1.5em;
+    max-height: 1.5em;
+}
+
+.logo h4{
+    font-size: 1.1em;
+}
+
+.logout{
+    margin: 0;
+    margin-right: 0.7em;
+    background-color: rgb(212, 67, 67);
+    border: var(--border-color);
+    padding: 0.7em;
+    border-radius: var(--border-radius);
+    transition: 0.3s;
+}
+
+.logout:hover{
+    transform: scale(1.1);
+    background-color: red;
+}
+
+.profile{
+    margin-left: 0.7em;
+}
+
+.header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Back button styling */
+.backButton{
+    margin-top: 0.5em;
+    height: 3em;
+    width: 5em;
+    margin-left: 0.3em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    transition: 0.3s ease;
+    background-color: rgb(212, 67, 67);
+    font-weight: bold;
+}
+
+.backButton:hover{
+    cursor: pointer;
+    transform: scale(1.1);    
+}
+
+/* Rewards title styling */
+.title {
+    background: rgb(211, 234, 201);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 3px solid black;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-left: 2.5em;
+    
+}
+
+/* Points container styling */
+.pointsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.currentPoints {
+    background-color: rgb(211, 234, 201);
+    color: black;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 1 em;
+    font-weight: bold;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+.refreshButton {
+    background-color: rgb(140, 202, 140);
+    color: black;
+    border: 0px solid grey;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.refreshButton:hover {
+    background-color: #f0f0f0;
+}
+
+/* Rewards list styling */
+.rewardsList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Styling for each reward item */
+.reward {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+}
+
+.reward img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reward div {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.reward h2 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.reward p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.reward button {
+    background-color: #75c777;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.reward button:hover {
+    background-color: #45a049;
+}
+
+/* Claim All button styling */
+.claimAll {
+    width: 100%;
+    background-color: #96f399;
+    color: black;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.claimAll:hover {
+    background-color: #45a049;
+}
+
+/* Popup styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    z-index: 1000;
+    text-align: center;
+    animation: popupAnimation 0.3s ease;
+}
+
+@keyframes popupAnimation {
+    from { opacity: 0; transform: translate(-50%, -55%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+.popup button {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.popup button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for claimed rewards */
+.reward.claimed {
+    background-color: #e0e0e0;
+    color: #808080;
+    cursor: not-allowed;
+}
+
+.reward button:disabled {
+    background-color: #808080;
+    cursor: not-allowed;
+}
+
+/* Confetti styling */
+.confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1001;
+}

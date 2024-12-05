@@ -1,0 +1,30 @@
+footer{
+    background-color: rgba(255,255,255,0.7);
+    position: relative;
+    height: 3.5em;
+    margin-top: 2em;
+    clear: both;
+    align-content: center;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: var(--top-margin);
+    padding: 0;
+}
+
+.nav img{
+    max-width: 5em;
+    max-height: 5em;
+}
+
+.nav li{
+    list-style: none;
+    transition: 0.2s;
+}
+
+li:hover{
+    transform: scale(1.2);
+}
